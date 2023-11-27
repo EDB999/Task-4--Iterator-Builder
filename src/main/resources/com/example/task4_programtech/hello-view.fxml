@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task4_programtech.Task45Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+
+    <BorderPane fx:id="bordPan" prefHeight="200.0" prefWidth="200.0">
+        <center>
+        </center>
+      <bottom>
+            <Button fx:id="pastButton" mnemonicParsing="false" onAction="#onPastButtonClick" text="Past" BorderPane.alignment="CENTER" />
+      </bottom>
+      <top>
+            <Button fx:id="nextButton" mnemonicParsing="false" onAction="#onNextButtonClick" text="Next" BorderPane.alignment="CENTER" />
+      </top>
+    </BorderPane>
+
+</VBox>
