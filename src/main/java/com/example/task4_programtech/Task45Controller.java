@@ -30,25 +30,25 @@ public class Task45Controller implements Initializable {
         build = new JokeBuilder();
         dir = new Director();
         var item = (Image)it.preview();
-        //Получение
+
         dir.setImage(item);
-        //Конкретная реализация builder'а
-        //Объект, который должен быть создан
+
+
         Joke joke = dir.Construct(build);
-        //Отображение полученного объекта
+
         bordPan.setCenter(joke.getPanel());
     }
     @FXML
     public void onNextButtonClick(ActionEvent actionEvent) {
         build = new JokeBuilder();
-        dir = new Director();
+
         var item = (Image)it.next();
-        //Получение
+        dir = new Director();
+
         dir.setImage(item);
-        //Конкретная реализация builder'а
-        //Объект, который должен быть создан
+
         Joke joke = dir.Construct(build);
-        //Отображение полученного объекта
+
         bordPan.setCenter(joke.getPanel());
     }
 
@@ -58,9 +58,9 @@ public class Task45Controller implements Initializable {
 
         it = slides.createIterator();
 
-        //распорядитель
+
         dir = new Director();
-        //Получение
+
         dir.setImage((Image)it.next());
     }
 }

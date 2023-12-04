@@ -33,6 +33,11 @@ public class ConcreteAggregate implements Aggregate {
         }
 
         @Override
+        public boolean hasPrevious() {
+            return !(current - 1 < 1);
+        }
+
+        @Override
         public boolean hasNext() {
             return !getImage(current + 1).isError();
         }
@@ -48,7 +53,7 @@ public class ConcreteAggregate implements Aggregate {
 
         @Override
         public Object preview() {
-            if (this.hasNext()){
+            if (this.hasPrevious()){
                 return getImage(--current);
             }
             current = max;
